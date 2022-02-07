@@ -1,5 +1,6 @@
 import os, sys
 import gi
+
 gi.require_version('Gst', '1.0')
 from gi.repository import Gst
 
@@ -12,10 +13,12 @@ pipeline = Gst.parse_launch(f'''
     fakesink name=s
 ''')
 
+
 def on_frame_probe(pad, info):
     buf = info.get_buffer()
     print(f'[{buf.pts / Gst.SECOND:6.2f}]')
     return Gst.PadProbeReturn.OK
+
 
 pipeline.get_by_name('s').get_static_pad('sink').add_probe(
     Gst.PadProbeType.BUFFER,

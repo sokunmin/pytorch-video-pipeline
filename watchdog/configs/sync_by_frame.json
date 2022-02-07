@@ -1,0 +1,41 @@
+{
+  "stream_common": {
+    "frame_size": [
+      640,
+      360
+    ],
+    "frame_rate": 15
+  },
+
+  "stream_io": {
+    "input_uri": [
+      "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov",
+      "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov",
+      "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"
+    ],
+    "output": null,
+    "osd_source": "stream_source",
+    "enable_osd": false,
+    "enable_archive": false
+  },
+
+  "stream_source": {
+    "max_buffer": 1
+  },
+
+  "stream_splitmux": {
+    "root_dir": "/media/nexretail/NEXDISK/py_workspace/tracking/FastMOT/video_clips",
+    "temp_dirname": "temp",
+    "process_dirname": "proc",
+    "archive_dirname": "arch",
+    "split_seconds": 10,
+    "video_codec": "XVID",
+    "video_extension": "avi",
+    "keep_frames_on_exit": false,
+    "pre_scan": true
+  },
+
+  "video_watchdog": {
+    "max_buffer_frames": 3600
+  }
+}

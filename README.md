@@ -3,6 +3,29 @@
 ## Run this command first before executing python scripts.
 `xhost +`
 
+## Install requirements
+```
+sudo add-apt-repository ppa:nnstreamer/ppa
+sudo apt-get update
+sudo apt-get install nnstreamer
+
+sudo apt install libprotobuf-dev
+sudo apt-get install python-gi python3-gi
+sudo apt-get install python-gst-1.0 python3-gst-1.0
+sudo apt-get install python-gst-1.0-dbg python3-gst-1.0-dbg
+
+sudo apt-get install libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools
+
+apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
+
+sudo apt install nnstreamer nnstreamer-cpp nnstreamer-cpp-dev nnstreamer-dev nnstreamer-flatbuf nnstreamer-misc nnstreamer-protobuf nnstreamer-python3 nnstreamer-pytorch nnstreamer-tensorflow nnstreamer-tensorflow-lite
+sudo apt install nnstreamer nnstreamer-cpp nnstreamer-cpp-dev nnstreamer-dev nnstreamer-flatbuf nnstreamer-misc nnstreamer-protobuf nnstreamer-python3 nnstreamer-pytorch 
+
+sudo apt install tensorflow-lite-dev tensoorflow2-lite-dev nnstreamer-tensorflow2-lite
+sudo apt install tensorflow-lite-dev tensorflow2-lite-dev nnstreamer-tensorflow2-lite
+
+sudo apt-get install python3 python3-pip python3-setuptools python3-wheel ninja-build
+```
 
 ## Setup environment variables
 ```
